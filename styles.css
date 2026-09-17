@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('assets/fonts/outfit-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('assets/fonts/outfit-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('assets/fonts/outfit-900.woff2') format('woff2');
+}
+
 :root {
   color-scheme: dark;
   --bg: #05040c;
@@ -297,6 +321,93 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 12px 16px;
+}
+
+.btn {
+  appearance: none;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 0.92rem;
+  border-radius: 999px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text);
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background: rgba(9, 7, 22, 0.97);
+  border-top: 1px solid var(--border);
+  padding: 16px 0 18px;
+  box-shadow: 0 -16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.cookie-banner[hidden] {
+  display: none;
+}
+
+.cookie-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px 24px;
+}
+
+.cookie-title {
+  margin: 0 0 6px;
+  font-weight: 800;
+}
+
+.cookie-inner p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 70ch;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 16px 0 24px;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.doc-table th,
+.doc-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+}
+
+.doc-table th {
+  background: rgba(140, 90, 220, 0.12);
 }
 
 @media (max-width: 900px) {

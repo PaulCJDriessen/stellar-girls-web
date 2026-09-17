@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy policy — Stellar Girls</title>
-    <meta name="description" content="Privacy policy for the Stellar Girls website and Windows game." />
+    <meta name="description" content="GDPR privacy policy for the Stellar Girls website and Windows game." />
     <link rel="icon" href="assets/icon.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -23,6 +20,7 @@
           <a href="manual.html">Manual</a>
           <a href="health.html">Health</a>
           <a href="privacy.html" aria-current="page">Privacy</a>
+          <a href="cookies.html">Cookies</a>
         </nav>
       </div>
     </header>
@@ -30,53 +28,96 @@
     <main class="doc">
       <div class="wrap">
         <h1>Privacy policy</h1>
-        <p class="updated">Effective 17 September 2026. Publisher: Paul Driessen (Stellar Girls).</p>
+        <p class="updated">Effective 17 September 2026. Includes GDPR. Publisher / controller: Paul Driessen (Stellar Girls).</p>
 
         <p>
-          This policy covers <strong>this website</strong> and the <strong>Stellar Girls Windows game</strong>. It is written for how the project actually works today — not for a hypothetical account server. If Steam Cloud, achievements, or store checkout go live later, those pieces are covered by Valve’s policies as well, and we will update this page.
+          This policy covers <strong>this website</strong> and the <strong>Stellar Girls Windows game</strong>. It describes how the project actually works today. Steam Cloud, store checkout, and achievements, if they go live, are also covered by Valve. We will update this page when that happens.
         </p>
 
-        <h2>1. This website</h2>
+        <h2>1. Who is responsible</h2>
+        <p>
+          For GDPR, the controller of personal data we decide the purposes of is <strong>Paul Driessen</strong>, publishing as Stellar Girls.
+          Contact: <a href="https://github.com/PaulCJDriessen/stellar-girls-web/issues">github.com/PaulCJDriessen/stellar-girls-web/issues</a>
+          or the Steam store listing once it is public.
+        </p>
+        <p>
+          <strong>GitHub, Inc.</strong> hosts this site (GitHub Pages) and processes connection data. Valve processes data if you use Steam. They act as independent controllers for their own platforms.
+        </p>
+
+        <h2>2. This website</h2>
         <ul>
-          <li>The site is static files hosted on GitHub Pages. We do not run a login, newsletter, or comment form here.</li>
-          <li>We do not set first-party analytics cookies. GitHub (and your browser, DNS, or ISP) may process technical data such as IP address and user-agent when you request pages. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub’s privacy statement</a>.</li>
-          <li>Pages load the Outfit font from Google Fonts. Google may receive your IP address. You can block third-party fonts; the site remains readable.</li>
-          <li>We do not sell personal data. We do not run ads.</li>
+          <li>Static files. No login, newsletter, or comment form.</li>
+          <li>No advertising. No first-party analytics cookies. Fonts are self-hosted.</li>
+          <li>We store only your cookie-banner choice in <code>localStorage</code> (<code>sg_cookie_consent_v1</code>), for 12 months. See the <a href="cookies.html">cookie policy</a>.</li>
+          <li>GitHub may log IP address, user-agent, and similar technical data to serve pages. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub’s privacy statement</a>.</li>
         </ul>
 
-        <h2>2. The game (offline-first)</h2>
+        <h3>Legal bases (GDPR Art. 6)</h3>
+        <ul>
+          <li><strong>6(1)(f) legitimate interest</strong> — operating a public website (hosting, security, serving files).</li>
+          <li><strong>6(1)(c) legal obligation</strong> — recording your cookie choice where ePrivacy requires it.</li>
+          <li><strong>6(1)(a) consent</strong> — would apply to any optional cookies or tags we add later. None are loaded today.</li>
+        </ul>
+        <p>Legitimate interest balancing: we publish game information without tracking you across the web. You can avoid the processing by not loading the site.</p>
+
+        <h3>International transfers</h3>
+        <p>
+          GitHub is a US company. If you visit from the EEA/UK, connection data may transfer outside the EEA under GitHub’s terms (including Standard Contractual Clauses where they apply). We do not send your data to other countries ourselves.
+        </p>
+
+        <h2>3. The game (offline-first)</h2>
         <p>Stellar Girls is an Electron app. It does not require a Stellar Girls account.</p>
         <ul>
-          <li><strong>Campaign save</strong> is a local file under the app’s Windows user data folder (<code>saves/campaign.json</code>). It stores progress, Trust, ★, lineup, and relationship flags needed to resume play.</li>
-          <li><strong>Settings</strong> (volume, fullscreen, resolution) and a few “already taught this tip” flags live in the browser profile’s <code>localStorage</code> on your machine.</li>
-          <li>We do not operate a telemetry backend. The current build does not phone home for analytics.</li>
-          <li>Resetting progress from the in-game menu deletes the local campaign file we manage. It does not wipe your whole PC.</li>
+          <li><strong>Campaign save</strong> — local file under Windows user data (<code>saves/campaign.json</code>): progress, Trust, ★, lineup, relationship flags.</li>
+          <li><strong>Settings and tips</strong> — <code>localStorage</code> on this machine (volume, display, “already taught”).</li>
+          <li>No telemetry backend. The current build does not phone home for analytics.</li>
+          <li>Reset in the menu deletes the campaign file we manage, not your whole PC.</li>
         </ul>
+        <p>Legal basis for local play data: it stays on your device under your control (typically not a controller–processor relationship until it leaves the device). If Steam Cloud ships, Valve’s agreement and our update to this page will cover that copy.</p>
 
-        <h2>3. Steam (when you play through Steam)</h2>
+        <h2>4. Steam</h2>
         <p>
-          If you install or buy via Steam, Valve processes purchase, Steam ID, overlay, and (when enabled) Cloud data under the <a href="https://store.steampowered.com/privacy_agreement/">Steam Privacy Agreement</a>. Stellar Girls does not currently ship Cloud sync; if that lands, the save described above may be copied to Steam Cloud so you can restore it on another PC signed into the same Steam account.
+          Purchases, Steam ID, overlay, and Cloud (if enabled) are processed by Valve under the
+          <a href="https://store.steampowered.com/privacy_agreement/">Steam Privacy Agreement</a>.
+          Cloud sync is not in the current build.
         </p>
 
-        <h2>4. Children</h2>
+        <h2>5. Children</h2>
         <p>
-          The game is intended for mature audiences (PEGI 16 / ESRB M target). We do not knowingly collect personal data from children. Do not create Steam or device accounts for the purpose of letting a child play this title.
+          Intended for mature audiences (PEGI 16 / ESRB M target). We do not knowingly collect personal data from children. Do not let a child play this title via your accounts.
         </p>
 
-        <h2>5. Your choices</h2>
+        <h2>6. Your GDPR rights</h2>
+        <p>If GDPR (or UK GDPR) applies to you, you may ask us to:</p>
         <ul>
-          <li>Uninstall the game to remove the application. Local saves/settings may remain in the user-data folder until you delete that folder.</li>
-          <li>Stop visiting this website. Clear your browser cache if you wish.</li>
-          <li>Use Steam’s own privacy and overlay settings when playing on Steam.</li>
+          <li>Access the personal data we hold about you</li>
+          <li>Rectify inaccurate data</li>
+          <li>Erase data (where an exception does not apply)</li>
+          <li>Restrict or object to processing based on legitimate interest</li>
+          <li>Receive data you provided, in a portable format, where processing is based on consent or contract and is automated</li>
+          <li>Withdraw consent without affecting earlier lawful processing</li>
+        </ul>
+        <p>
+          We hold almost no identifiable data ourselves beyond what you send in a GitHub issue and the consent record in <em>your</em> browser (we cannot read that remote localStorage). Hosting logs are GitHub’s.
+        </p>
+        <p>
+          You may lodge a complaint with your lead supervisory authority (in the EU, the DPA of your country; in the UK, the ICO). We would rather fix the issue if you contact us first.
+        </p>
+
+        <h2>7. Retention</h2>
+        <ul>
+          <li>Cookie choice: 12 months on your device, or until you clear site data / change settings.</li>
+          <li>GitHub Pages logs: GitHub’s retention.</li>
+          <li>GitHub issues you open: until you or we close/delete them, subject to GitHub’s rules.</li>
+          <li>Local game saves: until you reset or delete the folder.</li>
         </ul>
 
-        <h2>6. Contact</h2>
+        <h2>8. Contact &amp; changes</h2>
         <p>
-          Questions about this policy: open an issue on the public site repository
-          <a href="https://github.com/PaulCJDriessen/stellar-girls-web/issues">github.com/PaulCJDriessen/stellar-girls-web</a>
-          or contact the publisher through the Steam store listing for Stellar Girls once it is live.
+          Privacy questions:
+          <a href="https://github.com/PaulCJDriessen/stellar-girls-web/issues">site repository issues</a>
+          or the Steam publisher listing when live. Material changes will get a new date at the top of this page.
         </p>
-        <p>We will post the date of any material change at the top of this page.</p>
       </div>
     </main>
 
@@ -88,8 +129,28 @@
           <a href="manual.html">Manual</a>
           <a href="health.html">Health</a>
           <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+          <a href="#" data-cookie-settings>Cookie settings</a>
         </nav>
       </div>
     </footer>
+
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+      <div class="cookie-inner wrap">
+        <div>
+          <p id="cookie-title" class="cookie-title">Cookies &amp; GDPR</p>
+          <p id="cookie-desc">
+            Essential storage only: we save this choice on your device. GitHub Pages may process technical data (such as IP) to serve the site. No ads or analytics from us.
+            <a href="cookies.html">Cookie policy</a> ·
+            <a href="privacy.html">Privacy</a>
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button type="button" class="btn ghost" data-cookie="necessary">Necessary only</button>
+          <button type="button" class="btn primary" data-cookie="all">Accept</button>
+        </div>
+      </div>
+    </div>
+    <script src="consent.js" defer></script>
   </body>
 </html>

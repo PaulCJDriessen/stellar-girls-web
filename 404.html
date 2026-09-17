@@ -6,9 +6,6 @@
     <title>Not found — Stellar Girls</title>
     <link rel="icon" href="assets/icon.jpg" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <main class="doc">
@@ -17,5 +14,22 @@
         <p><a href="index.html">Back to Stellar Girls</a></p>
       </div>
     </main>
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+      <div class="cookie-inner wrap">
+        <div>
+          <p id="cookie-title" class="cookie-title">Cookies &amp; GDPR</p>
+          <p id="cookie-desc">
+            Essential storage only: we save this choice on your device.
+            <a href="cookies.html">Cookie policy</a> ·
+            <a href="privacy.html">Privacy</a>
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button type="button" class="btn ghost" data-cookie="necessary">Necessary only</button>
+          <button type="button" class="btn primary" data-cookie="all">Accept</button>
+        </div>
+      </div>
+    </div>
+    <script src="consent.js" defer></script>
   </body>
 </html>
