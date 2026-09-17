@@ -345,6 +345,78 @@ img {
   color: var(--text);
 }
 
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.btn:hover {
+  color: #fff;
+  text-decoration: none;
+  filter: brightness(1.08);
+}
+
+.support-form {
+  display: grid;
+  gap: 16px;
+  max-width: 36rem;
+  margin: 28px 0 24px;
+  padding: 22px 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.support-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.support-form input,
+.support-form select,
+.support-form textarea {
+  font: inherit;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(5, 4, 12, 0.7);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.support-form textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.support-form label.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.support-form label.check input {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.support-form .hp {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
 .cookie-banner {
   position: fixed;
   left: 0;

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support — Stellar Girls</title>
+    <meta
+      name="description"
+      content="Contact Stellar Girls support: bugs, Steam, privacy requests, and other questions."
+    />
+    <link rel="icon" href="assets/icon.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="assets/icon.jpg" alt="" />
+          Stellar Girls
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="manual.html">Manual</a>
+          <a href="health.html">Health</a>
+          <a href="support.html" aria-current="page">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="doc">
+      <div class="wrap">
+        <h1>Support</h1>
+        <p class="updated">We read this mailbox. Last updated 17 September 2026</p>
+
+        <p class="lede">
+          Bugs, crashes, Steam, accessibility, and privacy requests. Check the
+          <a href="manual.html">manual</a> and
+          <a href="health.html">health warning</a> first if that might already answer it.
+        </p>
+
+        <form
+          class="support-form"
+          action="https://formsubmit.co/fbda1179b3d32dd8cf11ae581e78fd18"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Stellar Girls support" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://paulcjdriessen.github.io/stellar-girls-web/support-thanks.html"
+          />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thanks for writing to Stellar Girls. We read every message. If we need more detail, we will reply to the address you gave."
+          />
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <label>
+            Name
+            <input type="text" name="name" maxlength="120" autocomplete="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" maxlength="200" autocomplete="email" required />
+          </label>
+
+          <label>
+            Topic
+            <select name="topic" required>
+              <option value="" disabled selected>Choose one</option>
+              <option value="bug">Bug or crash</option>
+              <option value="gameplay">How to play</option>
+              <option value="steam">Steam / purchase</option>
+              <option value="privacy">Privacy / GDPR</option>
+              <option value="health">Health / accessibility</option>
+              <option value="other">Something else</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="8" maxlength="8000" required></textarea>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="consent" value="yes" required />
+            <span>
+              I agree that this form is sent through FormSubmit to the Stellar Girls support inbox
+              (AgentMail) so we can reply. Details are in the
+              <a href="privacy.html">privacy policy</a>.
+            </span>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send message</button>
+          </div>
+        </form>
+
+        <p>
+          You can also write directly to
+          <a href="mailto:stellargirls-support@agentmail.to">stellargirls-support@agentmail.to</a>.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© 2026 Stellar Girls. <a href="health.html">Health warning</a>.</p>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="manual.html">Manual</a>
+          <a href="health.html">Health</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+          <a href="#" data-cookie-settings>Cookie settings</a>
+        </nav>
+      </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+      <div class="cookie-inner wrap">
+        <div>
+          <p id="cookie-title" class="cookie-title">Cookies &amp; GDPR</p>
+          <p id="cookie-desc">
+            Essential storage only: we save this choice on your device. GitHub Pages may process technical data (such as IP) to serve the site. No ads or analytics from us.
+            <a href="cookies.html">Cookie policy</a> ·
+            <a href="privacy.html">Privacy</a>
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button type="button" class="btn ghost" data-cookie="necessary">Necessary only</button>
+          <button type="button" class="btn primary" data-cookie="all">Accept</button>
+        </div>
+      </div>
+    </div>
+    <script src="consent.js" defer></script>
+  </body>
+</html>
